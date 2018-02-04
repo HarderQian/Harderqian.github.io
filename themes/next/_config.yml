@@ -183,7 +183,7 @@ links:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-avatar: /images/avatar.gif
+avatar: /images/avatar.png
 
 # Table Of Contents in the Sidebar
 toc:
@@ -273,9 +273,9 @@ symbols_count_time:
   #description: ex. subscribe to my blog by scanning my public wechat account
 
 # Reward
-#reward_comment: Donate comment here
-#wechatpay: /images/wechatpay.jpg
-#alipay: /images/alipay.jpg
+reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！
+wechatpay: /images/wechatpay.jpg
+alipay: /images/alipay.jpg
 #bitcoin: /images/bitcoin.png
 
 # Declare license on posts
@@ -418,7 +418,7 @@ pangu: false
 
 # Disqus
 disqus:
-  enable: false
+  enable: true
   shortname:
   count: true
   lazyload: false
@@ -429,15 +429,15 @@ disqus:
 # changyan
 changyan:
   enable: false
-  appid:
-  appkey:
+  appid: cyts1oSc1
+  appkey: bfc3a2527df8cd12b47143667108d985
 
 
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: true
+  enable: false
   appid: mjHGvqA1KFPbhXeRkfdA5BmM-gzGzoHsz
   appkey: eAc4JOdbXo6sWVPY7bv9TQIQ
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
@@ -450,7 +450,7 @@ valine:
 
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc
-#youyan_uid: your uid
+youyan_uid: 2156906
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
@@ -580,9 +580,9 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: Q6wqbJzxVh427MKXmR32pUxn-gzGzoHsz
+  app_key: 8TCU0KzVDOg2iSqNzlnUnArO
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
