@@ -418,7 +418,7 @@ pangu: false
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname:
   count: true
   lazyload: false
@@ -450,7 +450,7 @@ valine:
 
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc
-youyan_uid: 2156906
+#youyan_uid: 2156906
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
@@ -581,8 +581,8 @@ rating:
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
   enable: true
-  app_id: Q6wqbJzxVh427MKXmR32pUxn-gzGzoHsz
-  app_key: 8TCU0KzVDOg2iSqNzlnUnArO
+  app_id: h2UO8HIhytuy9riUXzPrPIPm-gzGzoHsz
+  app_key: tqbfRlld9BloI4uFs2PzGo6K
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
