@@ -331,6 +331,7 @@
       {% else %}
         {{ post.content }}
 		
+		{### 版权信息---手动添加 ###}
 		<div align="center">
 			<div class="copyright">
 				<p>
