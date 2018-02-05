@@ -149,9 +149,9 @@ site_state: true
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
   GitHub: https://github.com/harderqian || github
-  知乎: https://www.zhihu.com/people/yang-zi-hao-cheng-du-da-xue
-  Weibo: http://weibo.com/3290722423/ || weibo
-  QQ: http://wpa.qq.com/msgrd?v=3&uin=450311265&site=qq&menu=yes || qq
+  知乎: https://www.zhihu.com/people/qian-hong-liang-78
+  Weibo: https://weibo.com/harderqian || weibo
+  QQ: http://wpa.qq.com/msgrd?v=3&uin=781978505&site=qq&menu=yes || qq
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -178,12 +178,12 @@ links_title: Links
 links_layout: block
 #links_layout: inline
 links:
-  测试百度: http://baidu.com/
+  博客园: http://www.cnblogs.com/harderqian/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-avatar: /images/avatar.png
+avatar: /images/avatar.jpg
 
 # Table Of Contents in the Sidebar
 toc:
