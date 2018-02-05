@@ -333,8 +333,10 @@
 		
 		<div align="center">
 			<div class="copyright">
-				<p><span>
-					<b>本文地址：</b><a href="{{ url_for(page.path) }}" title="{{ page.title }}">{{ url_for(page.path) }}</a><br><b>转载请注明出处，谢谢！</b>
+				<p>
+				  <span>
+					<b>本文地址：</b><a href="{{ url_for(page.path) }}" title="{{ page.title }}">{{ page.permalink }}</a><br>
+					<b>转载请注明出处，谢谢！</b>
 				  </span>
 				</p>
 			</div>
