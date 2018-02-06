@@ -93,8 +93,16 @@ symbols_count_time:
   symbols: true
   time: true
 
+# RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 0
+  hub:
+  content: true
+
 # Server
 server:
   port: 4001
   compress: true
-  header: true
+  header: true  
