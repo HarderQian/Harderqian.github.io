@@ -98,3 +98,6 @@ server:
   port: 4001
   compress: true
   header: true
+  
+# RSS
+plugins: hexo-generate-feed
