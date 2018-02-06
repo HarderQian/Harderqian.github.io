@@ -93,8 +93,11 @@ symbols_count_time:
   symbols: true
   time: true
 
-#Server
+# Server
 server:
   port: 4001
   compress: true
   header: true
+  
+# RSS
+plugins: hexo-generate-feed
