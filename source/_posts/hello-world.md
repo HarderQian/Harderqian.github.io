@@ -85,7 +85,7 @@ More info: [Server](https://hexo.io/docs/server.html)
 
 ### Generate static files
 
-``` bash
+``` bash   
 $ hexo generate
 ```
 
@@ -97,28 +97,22 @@ More info: [Generating](https://hexo.io/docs/generating.html)
 $ hexo deploy
 ```
 
-More info: [Deployment](https://hexo.io/docs/deployment.html)  
+More info: [Deployment](https://hexo.io/docs/deployment.html)    
+
+``` cpp  
+  #include <stdio.h>
+  int main(void)
+  {
+     printf("Hello world\n");
+  }
+```
 
 {% cq %} blah blah blah {% endcq %}  
 
 {% fi http://localhost:4001/images/avatar.jpg, sdfd, hahaha %}   
 
-```java
-/**
- * @author John Smith <john.smith@example.com>
-*/
-package l2f.gameserver.model;
-public abstract class L2Char extends L2Object {
-  public static final Short ERROR = 0x0001;
-  public void moveTo(int x, int y, int z) {
-    _ai = null;
-    log("Should not be called");
-    if (1 > 5) { // wtf!?
-      return;
-    }
-  }
-}
-```   
+
+
 
 >dsdf  
 >sfdfs  
