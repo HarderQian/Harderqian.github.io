@@ -99,3 +99,5 @@ hexo d # 等同于hexo deploy，部署到服务器（github）
 ```
 
 第四步，现在，试试在浏览器的地址栏中输入： “你的用户名.github.io”，此时，出现Hexo的Hello world界面，表明关联成功了。
+
+## 安装主题
