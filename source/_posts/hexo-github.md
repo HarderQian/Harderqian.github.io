@@ -32,7 +32,7 @@ GitHub是基于Git的一个代码托管平台。开发者可以将代码在 GitH
 参考地址： [GitHub官网](https://github.com/ "GitHub")
 
 ### GitHub Pages
-GitHub Pages本用于介绍托管在GitHub的项目，不过，由于他的空间免费稳定，用来做搭建一个博客再好不过了。每个帐号只能有一个仓库来存放个人主页，而且仓库的名字必须是username/username.github.io，这是特殊的命名约定。你可以通过http://username.github.io 来访问你的个人主页。这里特别提醒一下，需要注意的个人主页的网站内容是在master分支下的。  
+GitHub Pages本用于介绍托管在GitHub的项目，不过，由于他的空间免费稳定，用来做搭建一个博客再好不过了。每个帐号只能有一个仓库来存放个人主页，而且仓库的名字必须是username/username.github.io，这是特殊的命名约定。你可以通过http://username.github.io来访问你的个人主页。这里特别提醒一下，需要注意的个人主页的网站内容是在master分支下的。  
 参考地址： [GitHub Pages官网](https://pages.github.com/ "GitHub Pages")
 
 ### Markdown 
@@ -100,4 +100,35 @@ hexo d # 等同于hexo deploy，部署到服务器（github）
 
 第四步，现在，试试在浏览器的地址栏中输入： “你的用户名.github.io”，此时，出现Hexo的Hello world界面，表明关联成功了。
 
+## 域名绑定
+我在阿里云购买的域名，这里主要介绍阿里云下的域名绑定。  
+第一步，进入阿里云域名管理界面，进行域名解析，如下图所示：  
+![aliyun](https://images2018.cnblogs.com/blog/505159/201802/505159-20180227212349137-456815993.png) 
+第二步，进行添加解析操作，添加两个CNAME记录，主机记录分别为www和@，注意将记录值改为自己的github pages地址，如下图所示：
+![aliyun](https://images2018.cnblogs.com/blog/505159/201802/505159-20180227212609259-26959668.png) 
+最后一步，必须在所建立的github仓库的主分支里建立一个CNAME文件，内容为你要解析到的目地地址，如下图所示：
+![CNAME](https://images2018.cnblogs.com/blog/505159/201802/505159-20180227213348957-1764696225.png) 
+**注意：**  
+CNAME文件要放到source文件夹里，例如我的路径为D:\hexo\blog\source\，放到这个下面的用意为每次hexo d的时候，会把原先仓库的所有东西清除掉，导致你的CNAME文件也会没有，放到source目录下，可以避免这种情况发生。
+
 ## 安装主题
+hexo官网上很有多好看的主题，个人推荐简洁大方、灵活，可以自己扩展、定制模块风格。  
+第一步，下载[Next主题](https://github.com/iissnan/hexo-theme-next/releases "Download Next")，把下载下来的文件夹解压、更名为next，并复制到theme目录下，如下图所示：
+![Next](https://images2018.cnblogs.com/blog/505159/201802/505159-20180227220413894-1339612611.png)   
+第二步，打开站点配置文件_config.yml，修改theme为next，如下图所示：
+![Next](https://images2018.cnblogs.com/blog/505159/201802/505159-20180227220709125-1519446043.png)  
+
+## Hexo常用命令
+
+``` bash
+hexo init [folder] # 初始化一个网站。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站
+hexo new [layout] <title> # 新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来
+hexo version # 查看版本
+hexo clean # 清除缓存文件 (db.json) 和已生成的静态文件 (public)
+hexo g # 等于hexo generate # 生成静态文件
+hexo s # 等于hexo server # 本地预览
+hexo d # 等于hexo deploy # 部署，可与hexo g合并为 hexo d -g
+```
+
+## 总结
+本文主要介绍了基于Hexo+Github搭建个人博客的流程、域名的绑定以及NEXT主题的安装，下面一篇文章将会对NEXT主题进行详细的分析与定制修改，文章有不足或者疏漏的地方，欢迎大家在下面讨论。
