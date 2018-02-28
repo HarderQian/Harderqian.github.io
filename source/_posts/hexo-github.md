@@ -5,6 +5,7 @@ permalink: hexo+github
 categories: 个人博客
 tags: [hexo,github]
 description:
+top: 20
 ---
 
 <img src="http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoIndex.jpg" alt="hexo" style="width:100%" />  
@@ -21,7 +22,7 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（�
 
 ### Nodejs
 简单的说，Nodejs就是运行在服务端的JavaScript。 基于V8引擎，是目前速度最快的Javascript引擎。chrome浏览器就基于V8，同时打开20-30个网页都很流畅。Nodejs标准的web开发框架Express，可以帮助我们迅速建立web站点，比起PHP的开发效率更高，而且学习曲线更低。非常适合小型网站，个性化网站，我们自己的Geek网站！！  
-参考地址： [NodeJs官网](http://nodejs.cn/ "NodeJs")
+参考地址： [Nodejs官网](http://nodejs.cn/ "Nodejs")
 
 ### Git
 Git是一个开源的分布式版本控制系统，用以有效、高速的处理从很小到非常大的项目版本管理。  
@@ -32,7 +33,7 @@ GitHub是基于Git的一个代码托管平台。开发者可以将代码在 GitH
 参考地址： [GitHub官网](https://github.com/ "GitHub")
 
 ### GitHub Pages
-GitHub Pages本用于介绍托管在GitHub的项目，不过，由于他的空间免费稳定，用来做搭建一个博客再好不过了。每个帐号只能有一个仓库来存放个人主页，而且仓库的名字必须是username/username.github.io，这是特殊的命名约定。你可以通过http://username.github.io来访问你的个人主页。这里特别提醒一下，需要注意的个人主页的网站内容是在master分支下的。  
+GitHub Pages本用于介绍托管在GitHub的项目，不过，由于他的空间免费稳定，用来做搭建一个博客再好不过了。每个帐号只能有一个仓库来存放个人主页，而且仓库的名字必须是username.github.io，这是特殊的命名约定。这里特别提醒一下，需要注意的个人主页的网站内容是在master分支下的。  
 参考地址： [GitHub Pages官网](https://pages.github.com/ "GitHub Pages")
 
 ### Markdown 
@@ -82,7 +83,7 @@ hexo g # 等同于hexo generate，生成静态文件到public文件夹
 hexo s # 等同于hexo server，在本地服务器运行
 ```
 ### 关联Hexo和Github Pages
-第一步，进入刚刚创建的hexo文件夹，打开站点配置文件_config.yml，在文件底部修改repository内容为之前创建的仓库地址，如下图所示：  
+第一步，进入刚刚创建的hexo文件夹，打开<span id="inline-blue">站点配置文件</span>_config.yml，在文件底部修改repository内容为之前创建的仓库地址，如下图所示：  
 ![HexoDeploySetting](http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoDeploySetting.png)  
 第二步，安装Git部署插件，命令行界面中进入hexo文件夹，输入如下命令：
 
@@ -115,7 +116,7 @@ CNAME文件要放到source文件夹里，例如我的路径为D:\hexo\blog\sourc
 hexo官网上很有多好看的主题，个人推荐简洁大方、灵活，可以自己扩展、定制模块风格。  
 第一步，下载[Next主题](https://github.com/iissnan/hexo-theme-next/releases "Download Next")，把下载下来的文件夹解压、更名为next，并复制到theme目录下，如下图所示：
 ![DownloadNext](http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoDownloadNext.png)   
-第二步，打开站点配置文件_config.yml，修改theme为next，如下图所示：
+第二步，打开<span id="inline-blue">站点配置文件</span>_config.yml，修改theme为next，如下图所示：
 ![NextSetting](http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoNextSetting.png)  
 
 ## Hexo常用命令

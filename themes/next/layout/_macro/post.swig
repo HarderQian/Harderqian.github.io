@@ -336,7 +336,7 @@
 			<div class="copyright">
 				<p>
 				  <span>
-					<b>本文地址：</b><a href="{{ url_for(page.path) }}" title="{{ page.title }}">{{ page.permalink }}</a><br>
+					<b>本文地址：</b><a href="{{ url_for(page.path) }}" title="{{ page.title }}" style="color: #555;text-decoration: none;outline: none;border-bottom: 1px solid #ccc;word-wrap: break-word;">{{ page.permalink }}</a><br>
 					<b>转载请注明出处，谢谢！</b>
 				  </span>
 				</p>
@@ -417,9 +417,9 @@
       {% if not is_index and (post.prev or post.next) %}
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
-            {% if post.next %}
-              <a href="{{ url_for(post.next.path) }}" rel="next" title="{{ post.next.title }}">
-                <i class="fa fa-chevron-left"></i> {{ post.next.title }}
+            {% if post.prev %}
+              <a href="{{ url_for(post.prev.path) }}" rel="prev" title="{{ post.prev.title }}">
+                <i class="fa fa-chevron-left"></i> {{ post.prev.title }}
               </a>
             {% endif %}
           </div>
@@ -427,9 +427,9 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            {% if post.prev %}
-              <a href="{{ url_for(post.prev.path) }}" rel="prev" title="{{ post.prev.title }}">
-                {{ post.prev.title }} <i class="fa fa-chevron-right"></i>
+            {% if post.next %}
+              <a href="{{ url_for(post.next.path) }}" rel="next" title="{{ post.next.title }}">
+                {{ post.next.title }} <i class="fa fa-chevron-right"></i>
               </a>
             {% endif %}
           </div>
