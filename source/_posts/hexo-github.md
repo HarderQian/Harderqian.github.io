@@ -1,5 +1,5 @@
 ---
-title: hexo+github搭建个人博客
+title: Hexo+Github搭建个人博客
 date: 2018-02-09 23:30:02
 permalink: hexo+github
 categories: 个人博客
@@ -112,7 +112,7 @@ hexo d # 等同于hexo deploy，部署到服务器（github）
 CNAME文件要放到source文件夹里，例如我的路径为D:\hexo\blog\source\，放到这个下面的用意为每次hexo d的时候，会把原先仓库的所有东西清除掉，导致你的CNAME文件也会没有，放到source目录下，可以避免这种情况发生。
 
 ## 安装主题
-hexo官网上很有多好看的主题，个人推荐简洁大方、灵活，可以自己扩展、定制模块风格。  
+hexo官网上很有多好看的主题，个人推荐简洁大方、灵活的Next主题，可以自己扩展、定制模块风格。  
 第一步，下载[Next主题](https://github.com/iissnan/hexo-theme-next/releases "Download Next")，把下载下来的文件夹解压、更名为next，并复制到theme目录下，如下图所示：
 ![DownloadNext](http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoDownloadNext.png)   
 第二步，打开<span id="inline-blue">站点配置文件</span>，修改theme为next，如下图所示：
