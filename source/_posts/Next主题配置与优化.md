@@ -293,8 +293,40 @@ fancybox: true
 </a>
 ```
 
+## 博文压缩优化
+生成的静态文件存在大量空白，在一定程度上影响了网页加载，可以使用hexo-neat插件，对博文进行压缩优化。  
+第一步，安装hexo-neat，在站点的根目录下执行以下命令：
+
+``` bash
+npm install hexo-neat --save
+```
+
+第二步，编辑<span id="inline-blue">站点配置文件</span>，新增以下内容到任意位置：
+
+```
+# hexo-neat
+neat_enable: true
+
+neat_html:
+  enable: true
+  exclude:
+  
+neat_css:
+  enable: true
+  exclude:
+    - '*.min.css'
+
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '*.min.js'
+```
+
 ## 顶部添加加载进度条
-第一步，先到[这里](https://github.com/theme-next/theme-next-pace source/lib/pace "pace")，下载theme-next-pace，并放在`\themes\next\source\lib`目录下。   
+第一步，先到[这里](https://github.com/theme-next/theme-next-pace "pace")，下载theme-next-pace，并放在`\themes\next\source\lib`目录下。   
 第二步，编辑<span id="inline-purple">主题配置文件</span>，修改pace配置信息，如下所示：
 
 ```
