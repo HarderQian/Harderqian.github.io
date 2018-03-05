@@ -36,7 +36,7 @@ GitHub Pages本用于介绍托管在GitHub的项目，不过，由于他的空�
 参考地址： [GitHub Pages官网](https://pages.github.com/ "GitHub Pages")
 
 ### Markdown 
-Markdown是一种轻量级的标记语言，它的优点很多，目前也被越来越多的写作爱好者，撰稿者广泛使用。看到这里请不要被**标记**、**语言**所迷惑，Markdown的语法十分简单。常用的标记符号也不超过十个，这种相对于更为复杂的HTML 标记语言来说，Markdown 可谓是十分轻量的，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。  
+Markdown是一种轻量级的标记语言，它的优点很多，目前也被越来越多的写作爱好者，撰稿者广泛使用。看到这里请不要被`标记`、`语言`所迷惑，Markdown的语法十分简单。常用的标记符号也不超过十个，这种相对于更为复杂的HTML 标记语言来说，Markdown 可谓是十分轻量的，学习成本也不需要太多，且一旦熟悉这种语法规则，会有一劳永逸的效果。  
 参考地址： [Markdown语法介绍](https://www.appinn.com/markdown/ "Markdown")
 
 ## 搭建流程
@@ -61,7 +61,7 @@ Nodejs下载地址： [下载Nodejs](http://nodejs.cn/download/ "Download Nodejs
 如果用户名.github.io（或者第三方域名）可以正常访问了，那么表示GitHub pages的配置正确无误。
 
 ### 安装Hexo
-在计算机的磁盘中创建一个目录，例如D:/hexo，然后在命令行中进入该目录。  
+在计算机的磁盘中创建一个目录，例如`D:/hexo`，然后在命令行中进入该目录。  
 第一步，安装hexo，输入如下命令：
 
 ``` bash
@@ -109,10 +109,32 @@ hexo d # 等同于hexo deploy，部署到服务器（github）
 最后一步，必须在所建立的github仓库的主分支里建立一个CNAME文件，内容为你要解析到的目地地址，如下图所示：
 ![AddCNAME](http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoAddCNAME.png) 
 **注意：**  
-CNAME文件要放到source文件夹里，例如我的路径为D:\hexo\blog\source\，放到这个下面的用意为每次hexo d的时候，会把原先仓库的所有东西清除掉，导致你的CNAME文件也会没有，放到source目录下，可以避免这种情况发生。
+CNAME文件要放到source文件夹里，例如我的路径为`D:\hexo\blog\source\`，放到这个下面的用意为每次hexo d的时候，会把原先仓库的所有东西清除掉，导致你的CNAME文件也会没有，放到source目录下，可以避免这种情况发生。
 
-## 安装主题
-hexo官网上很有多好看的主题，个人推荐简洁大方、灵活的Next主题，可以自己扩展、定制模块风格。  
+## Hexo配置
+
+### 基本配置
+主要是配置了博客的Site和URL信息，具体配置信息如下所示：
+
+```
+# Site
+title: HarderQian's Blog
+subtitle: 生活、技术个人博客
+description: Stay foolish，stay hungry！
+author: HarderQian
+language: zh-CN
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://www.harderqian.cn
+root: /
+permalink: :title/
+permalink_defaults:
+```
+
+### 安装主题
+Hexo官网上很有多好看的主题，个人推荐简洁大方、灵活的Next主题，可以自己扩展、定制模块风格。  
 第一步，下载[Next主题](https://github.com/iissnan/hexo-theme-next/releases "Download Next")，把下载下来的文件夹解压、更名为next，并复制到theme目录下，如下图所示：
 ![DownloadNext](http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoDownloadNext.png)   
 第二步，打开<span id="inline-blue">站点配置文件</span>，修改theme为next，如下图所示：
