@@ -400,6 +400,16 @@ skip_render: README.md
 ## 修改文章底部带#号的标签
 具体实现方法为，修改模板`\themes\next\layout\_macro\post.swig`，搜索 `rel="tag">#`，将 `#` 换成`<i class="fa fa-tag"></i>`。
 
+## 更改标签云颜色
+默认的标签云页面，颜色搭配、字体大小可能看起来不太协调，修改标签云颜色的方法为，修改`\themes\next\layout\page.swig`模板，具体修改位置如下：
+
+```
+{{ tagcloud({min_font: 13, max_font: 31, amount: 1000, color: true, start_color: '#bbb', end_color: '#111'}) }}
+```
+
+**提示:**  
+tagcloud中的对应参数说明，见[Hexo官方TagCloud说明](https://hexo.io/zh-cn/docs/helpers.html#tagcloud "tagcloud")
+
 ## 我的站点配置和主题配置
 分享一下我的站点配置、主题配置以及主题的自定义样式，如有疏漏或者问题，欢迎大家在下面评论区交流。
 我的站点配置如下：
@@ -1728,6 +1738,6 @@ code {
 ```
 
 ## 总结
-本文主要介绍了Next主题的配置与优化，主题的配置参考了网上很多相关博文的介绍，主题的优化与定制借鉴了很多优秀的个人博客（建议多用开发者工具，调试自己喜欢的元素style），文章有不足或者疏漏的地方，欢迎大家在下面讨论。
+本文主要介绍了Next主题的配置与优化，主题的配置参考了网上很多相关博文的介绍，主题的优化与定制借鉴了很多优秀的个人博客（建议多用开发者工具，调试自己喜欢的元素style），文章有不足或者疏漏的地方，欢迎大家在下面评论区讨论。
 
 
