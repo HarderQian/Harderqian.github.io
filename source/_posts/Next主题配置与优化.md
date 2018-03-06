@@ -442,6 +442,55 @@ skip_render: README.md
 **提示:**  
 tagcloud中的对应参数说明，见[Hexo官方TagCloud说明](https://hexo.io/zh-cn/docs/helpers.html#tagcloud "tagcloud")
 
+## 代码块添加全选按钮
+Hexo生成的博客中，代码片段是不支持选择全部功能的，若代码片段较长，手动选择非常的不方便，所以可以在代码块右侧添加一个全选按钮。具体实现方法为，在`\themes\next\layout\_layout.swig`模板中的`<head>`节点下添加如下代码：
+
+``` javascript
+<script src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js" language="JavaScript"></script>  
+<script>  
+	$(document).ready(function () {
+	var SelectText = function(element) {
+		var doc = document
+			, text = element
+			, range, selection
+		;    
+		if (doc.body.createTextRange) {
+			range = document.body.createTextRange();
+			range.moveToElementText(text);
+			range.select();
+		} else if (window.getSelection) {
+			selection = window.getSelection();        
+			range = document.createRange();
+			range.selectNodeContents(text);
+			selection.removeAllRanges();
+			selection.addRange(range);
+		}
+	};
+
+	$(".code").each(function() {
+		var code = $(this).get(0);
+		var button_html = 
+			'<div style="position: fixed;'                                                               +
+						'right: 3%;'                                                                     +
+						'margin-top: 5px;'                                                               +
+						'font-family: consolas, Menlo, \'PingFang SC\', \'Microsoft YaHei\', monospace;' +
+						'font-size: 10px;'                                                               +
+						'cursor: pointer;'                                                               +
+						'color: #ff7600;'                                                                +
+						'">'                                                                             +
+			'<span>全选</span>'                                                                          +
+			'</div>';
+		var button = $(button_html);
+
+		$(button).click(function() {
+			SelectText(code);
+		});
+		$(button).insertBefore(this);
+	});
+}); 
+</script> 
+```
+
 ## 我的站点配置和主题配置
 分享一下我的站点配置、主题配置以及主题的自定义样式，如有疏漏或者问题，欢迎大家在下面评论区交流。
 我的站点配置如下：
