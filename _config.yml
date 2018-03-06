@@ -103,7 +103,6 @@ feed:
   content: true
   
 # hexo-neat
-
 neat_enable: true
 
 neat_html:
