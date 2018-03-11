@@ -439,8 +439,7 @@ skip_render: README.md
 {{ tagcloud({min_font: 13, max_font: 31, amount: 1000, color: true, start_color: '#bbb', end_color: '#111'}) }}
 ```
 
-**提示:**  
-tagcloud中的对应参数说明，见[Hexo官方TagCloud说明](https://hexo.io/zh-cn/docs/helpers.html#tagcloud "tagcloud")
+>**提示：** tagcloud中的对应参数说明，见[Hexo官方TagCloud说明](https://hexo.io/zh-cn/docs/helpers.html#tagcloud "tagcloud")
 
 ## 代码块添加全选按钮
 Hexo生成的博客中，代码片段是不支持选择全部功能的，若代码片段较长，手动选择非常的不方便，所以可以在代码块右侧添加一个全选按钮。具体实现方法为，在`\themes\next\layout\_layout.swig`模板中的`<head>`节点下添加如下代码：
