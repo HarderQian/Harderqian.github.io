@@ -1768,6 +1768,13 @@ img:hover {
 	font-weight: bold;
 }
 
+/******************文章块引用样式*******************/
+blockquote {
+    padding: 0 15px;
+    color: #666;
+    border-left: 4px solid #649ab6;
+}
+
 /******************文章内Span自定义样式*******************/
 span#inline-blue,span#inline-green,span#inline-purple,span#inline-yellow {
     display: inline;
@@ -1803,7 +1810,7 @@ code {
     color: #ff7600;
     background: #fbf7f8;
     margin: 2px;
-	border: 1px solid #d6d6d6;
+	border: 1px solid #c1c1c1;
 }
 
 /******************文章底部标签样式*******************/
@@ -1815,6 +1822,7 @@ code {
     font-family: 'Comic Sans MS', sans-serif;
     transition: 0.2s ease-out;
 }
+
 ```
 
 ## 总结

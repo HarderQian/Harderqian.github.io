@@ -108,8 +108,8 @@ hexo d # 等同于hexo deploy，部署到服务器（github）
 ![AliyunAddRecord](http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/aliyunDomainAddRecord.png) 
 最后一步，必须在所建立的github仓库的主分支里建立一个CNAME文件，内容为你要解析到的目地地址，如下图所示：
 ![AddCNAME](http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoAddCNAME.png) 
-**注意：**  
-CNAME文件要放到source文件夹里，例如我的路径为`D:\hexo\blog\source\`，放到这个下面的用意为每次hexo d的时候，会把原先仓库的所有东西清除掉，导致你的CNAME文件也会没有，放到source目录下，可以避免这种情况发生。
+ 
+>**注意：** CNAME文件要放到source文件夹里，例如我的路径为`D:\hexo\blog\source\`，放到这个下面的用意为每次hexo d的时候，会把原先仓库的所有东西清除掉，导致你的CNAME文件也会没有，放到source目录下，可以避免这种情况发生。
 
 ## Hexo配置
 
