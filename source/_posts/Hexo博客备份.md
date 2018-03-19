@@ -18,7 +18,7 @@ description:
 1、创建仓库Username.github.io，如果同名仓库之前已经创建，请将之前的仓库改名，新建的仓库名必须是Username.github.io；  
 2、创建两个分支：master和hexo，并设置hexo为默认分支；  
 3、将刚刚创建的新仓库clone至本地，将之前的hexo文件夹中的`_config.yml`、`themes/`、`source/`、`scaffolds/`、`package.json`、`.gitignore`复制至克隆下来的文件夹Username.github.io中；  
-4、将`themes/next`（我用的是Next主题）中的.git/删除，否则无法将主题文件夹push至服务器；  
+4、将`themes/next`（我用的是Next主题）中的.git/删除（.gitignore里面的内容要删掉，并且`\source\lib`目录下的插件中的.git也要删除），否则无法将主题文件夹push至服务器；  
 5、在Username.github.io中执行`npm install`和`npm install hexo-deployer-git`；  
 6、执行`git add .`、`git commit -m ""`、`git push origin hexo`来提交hexo网站源文件；  
 7、执行`hexo g -d`生成静态网页部署到GitHub中； 
@@ -34,7 +34,7 @@ description:
 重装电脑后，或者在其他电脑上想修改博客：  
 1、安装Git、Nodejs；  
 2、使用git clone命令或者github桌面版，将仓库拷贝至本地；  
-3、在文件夹内依次执行以下命令`npm install hexo-cli -g`、`npm install`、`npm install hexo-deployer-git`。
+3、在文件夹内依次执行以下命令`npm install hexo-cli -g`、`npm install`、`npm install hexo-deployer-git`；
 
 ## 附录
 这里说明一下，博客备份中的步骤3为什么只需要拷贝6个，而不需要全部：  
