@@ -7,7 +7,7 @@ tags: [Win10, 重装系统]
 description:
 ---
 
-<img src="https://hexorepo.oss-cn-hongkong.aliyuncs.com/images/win10.png" alt="hexo" style="width:100%" />  
+<img src="https://hexorepo.oss-cn-hongkong.aliyuncs.com/images/windowsCover.jpg" alt="hexo" style="width:100%" />  
 
 ## 前言  
 Windows 10是美国微软公司研发的跨平台及设备应用的操作系统，是微软发布的最后一个独立Windows版本。本文以安装Win10 64位专业版为例，详细介绍了安装的流程以及安装过程中遇到的相关问题。
