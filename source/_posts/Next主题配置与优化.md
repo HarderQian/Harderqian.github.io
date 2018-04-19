@@ -3,7 +3,7 @@ title: Next主题配置与优化
 date: 2018-03-04 14:24:59
 permalink: AboutNext
 categories: 个人博客
-tags: [hexo,next]
+tags: [Hexo, Next]
 description:
 ---
 

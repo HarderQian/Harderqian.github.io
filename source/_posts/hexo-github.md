@@ -3,7 +3,7 @@ title: Hexo+Github搭建个人博客
 date: 2018-02-09 23:30:02
 permalink: hexo+github
 categories: 个人博客
-tags: [hexo,github]
+tags: [Hexo, Github]
 description:
 ---
 
