@@ -230,7 +230,7 @@ livere_uid: your uid
 
 ## 配置Gitment评论
 由于来比力评论系统，服务偶尔连不上，影响体验效果，于是在网上查了下，很多博主力荐Gitment评论系统（已集成进新版的Next主题中）。[Gitment](https://github.com/imsun/gitment "Gitment")是一款基于GitHub Issuse的评论功能，主要面向程序员群体，尤为适合各种静态博客和项目页面，具体配置步骤如下：  
-第一步，前往GitHub注册一个新的OAuth Application，填写以下内容：
+第一步，前往[GitHub](https://github.com/settings/applications/new "Github setting")注册一个新的OAuth Application，填写以下内容：
 
 ```
 Application name：Gitment #自己随便起名字
