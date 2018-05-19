@@ -228,6 +228,39 @@ Next主题支持多款评论系统，不过来比力的服务相对而言，比�
 livere_uid: your uid
 ```
 
+## 配置Gitment评论
+由于来比力评论系统，服务偶尔连不上，影响体验效果，于是在网上查了下，很多博主力荐Gitment评论系统（已集成进新版的Next主题中）。[Gitment](https://github.com/imsun/gitment "Gitment")是一款基于GitHub Issuse的评论功能，主要面向程序员群体，尤为适合各种静态博客和项目页面，具体配置步骤如下：  
+第一步，前往GitHub注册一个新的OAuth Application，填写以下内容：
+
+```
+Application name：Gitment #自己随便起名字
+Homepage URL：http://www.harderqian.cn/ #这个是你自己博客主页地址，这个地址一定要写正确了，否则授权登录就会失败
+Application description：Blog comment system #随便写
+Authorization callback URL：http://www.harderqian.cn/ #这个是回调地址，一般写自己博客主页地址就行
+```
+
+>**提示：** 点击Register application后，你会得到一个client ID和一个client secret，这个将被用于之后的设置
+
+第二步，创建存放Gitment评论仓库，那么博客的评论就会显示在仓库的issue中，例如我为Gitment新建的仓库为HexoBlogComments，那么在后面的配置中的仓库名设为HexoBlogComments。
+
+第三步，然后编辑<span id="inline-purple">主题配置文件</span>，启用Gitment评论功能：
+
+```
+gitment:
+  enable: true
+  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
+  count: true # Show comments count in post meta area
+  lazy: false # Comments lazy loading with a button
+  cleanly: true # Hide 'Powered by ...' on footer, and more
+  language: zh-Hans
+  github_user: harderqian
+  github_repo: HexoBlogComments
+  client_id: your client ID
+  client_secret: your client secret
+  proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
+  redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
+```
+
 ## 配置百度分享
 编辑<span id="inline-purple">主题配置文件</span>，修改字段 baidushare，值为true，如下所示：
 
