@@ -7,7 +7,7 @@ tags: [Hexo, 备份]
 description:
 ---
 
-<img src="http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoIndex.jpg" alt="hexo" style="width:100%" />  
+<img src="https://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoIndex.jpg" alt="hexo" style="width:100%" />  
 
 ## 前言  
 使用Hexo在GitHub搭建的博客，博客作为一个单独的GitHub仓库存在，但是这个仓库只有生成的静态网页文件，并没有Hexo的源文件，如果要换电脑或者重装系统后，就比较麻烦了，本文主要介绍了一种比较简单的Hexo博客备份方法。

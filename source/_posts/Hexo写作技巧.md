@@ -7,7 +7,7 @@ tags: Hexo
 description:
 ---
 
-<img src="http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoIndex.jpg" alt="hexo" style="width:100%" />  
+<img src="https://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoIndex.jpg" alt="hexo" style="width:100%" />  
 
 ## 前言  
 构建完博客、配置好主题后，只能说有个漂亮的外壳，内容丰富且颜值高的文章才是真正的精华，本文主要介绍了几个提高文章颜值的技巧方法。

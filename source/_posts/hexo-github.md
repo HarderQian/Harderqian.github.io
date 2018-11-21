@@ -7,7 +7,7 @@ tags: [Hexo, Github]
 description:
 ---
 
-<img src="http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoIndex.jpg" alt="hexo" style="width:100%" />  
+<img src="https://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoIndex.jpg" alt="hexo" style="width:100%" />  
 
 ## 前言  
 Hexo是一款基于Nodejs的快速、简洁且高效的博客框架。Hexo使用Markdown解析文章，在几秒内，即可利用靓丽的主题生成静态网页；GitHub Pages本用于介绍托管在GitHub的项目，不过由于他的空间免费稳定，用来搭建一个博客再好不过了。基于两者的特点与优势，本文主要介绍了结合Hexo+Github搭建个人博客的详细流程。
@@ -50,14 +50,14 @@ Nodejs下载地址： [下载Nodejs](http://nodejs.cn/download/ "Download Nodejs
 在管理Git项目上，很多时候都是直接使用https url克隆到本地，当然也有使用SSH url克隆到本地。这两种方式的主要区别在于：使用https url克隆对初学者来说会比较方便，复制https url然后到git Bash里面直接用clone命令克隆到本地就好了，但是每次fetch和push代码都需要输入账号和密码，这也是https方式的麻烦之处；而使用SSH url克隆却需要在克隆之前先配置和添加好SSH key，因此，如果你想要使用SSH url克隆的话，你必须是这个项目的拥有者。否则你是无法添加SSH key的，另外ssh默认是每次fetch和push代码都不需要输入账号和密码。  
 第一步，打开git bash，输入ssh-keygen -t rsa，接着回车三下，然后就会在C盘用户目录下生成id_rsa和id_rsa.pub这两个文件，前者是密钥，后者是公钥。  
 第二步，用记事本打开id_rsa.pub，复制其中的全部内容，添加到GitHub上，这样本地的id_rsa密钥就可以和GitHub上的id_rsa.pub公钥进行配对，授权成功，如下图所示：  
-![SSH](http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/githubSSH.png)  
+![SSH](https://hexorepo.oss-cn-hongkong.aliyuncs.com/images/githubSSH.png)  
 第三步，SSH key添加之后，就可以在本机git bash中进行测试，输入ssh -T git@github.com进行测试，返回Hi username！You've successfully ......说明你已经成功啦！
 
 ### 创建仓库、设置GitHub pages
 首先，登录Github，创建一个仓库，因为Github Pages的Repository名字是特定的，所以仓库命名为“用户名.github.io”，比如我的Github的用户名为Harderqian，那么Github Pages的Repository名字就是Harderqian.github.io，具体操作如下图所示：  
-![GitHub Repo](http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/githubRepo.png)  
+![GitHub Repo](https://hexorepo.oss-cn-hongkong.aliyuncs.com/images/githubRepo.png)  
 然后，进入仓库的Setting界面，设置GitHub Pages，具体操作如下图所示：  
-![GitHub Pages Setting](http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/githubpagesSetting.png)  
+![GitHub Pages Setting](https://hexorepo.oss-cn-hongkong.aliyuncs.com/images/githubpagesSetting.png)  
 如果用户名.github.io（或者第三方域名）可以正常访问了，那么表示GitHub pages的配置正确无误。
 
 ### 安装Hexo
@@ -83,7 +83,7 @@ hexo s # 等同于hexo server，在本地服务器运行
 ```
 ### 关联Hexo和Github Pages
 第一步，进入刚刚创建的hexo文件夹，打开<span id="inline-blue">站点配置文件</span>，即_config.yml，在文件底部修改repository内容为之前创建的仓库地址，如下图所示：  
-![HexoDeploySetting](http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoDeploySetting.png)  
+![HexoDeploySetting](https://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoDeploySetting.png)  
 第二步，安装Git部署插件，命令行界面中进入hexo文件夹，输入如下命令：
 
 ``` bash
@@ -103,11 +103,11 @@ hexo d # 等同于hexo deploy，部署到服务器（github）
 ## 域名绑定
 我在阿里云购买的域名，这里主要介绍阿里云下的域名绑定。  
 第一步，进入阿里云域名管理界面，进行域名解析，如下图所示：  
-![AliyunDomainResolution](http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/aliyunDomainResolution.png) 
+![AliyunDomainResolution](https://hexorepo.oss-cn-hongkong.aliyuncs.com/images/aliyunDomainResolution.png) 
 第二步，进行添加解析操作，添加两个CNAME记录，主机记录分别为www和@，注意将记录值改为自己的github pages地址，如下图所示：
-![AliyunAddRecord](http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/aliyunDomainAddRecord.png) 
+![AliyunAddRecord](https://hexorepo.oss-cn-hongkong.aliyuncs.com/images/aliyunDomainAddRecord.png) 
 最后一步，必须在所建立的github仓库的主分支里建立一个CNAME文件，内容为你要解析到的目地地址，如下图所示：
-![AddCNAME](http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoAddCNAME.png) 
+![AddCNAME](https://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoAddCNAME.png) 
  
 >**注意：** CNAME文件要放到source文件夹里，例如我的路径为`D:\hexo\blog\source\`，放到这个下面的用意为每次hexo d的时候，会把原先仓库的所有东西清除掉，导致你的CNAME文件也会没有，放到source目录下，可以避免这种情况发生。
 
@@ -136,9 +136,9 @@ permalink_defaults:
 ### 安装主题
 Hexo官网上很有多好看的主题，个人推荐简洁大方、灵活的Next主题，可以自己扩展、定制模块风格。  
 第一步，下载[Next主题](https://github.com/iissnan/hexo-theme-next/releases "Download Next")，把下载下来的文件夹解压、更名为next，并复制到theme目录下，如下图所示：
-![DownloadNext](http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoDownloadNext.png)   
+![DownloadNext](https://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoDownloadNext.png)   
 第二步，打开<span id="inline-blue">站点配置文件</span>，修改theme为next，如下图所示：
-![NextSetting](http://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoNextSetting.png)  
+![NextSetting](https://hexorepo.oss-cn-hongkong.aliyuncs.com/images/hexoNextSetting.png)  
 
 ## Hexo常用命令
 
