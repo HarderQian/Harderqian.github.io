@@ -466,9 +466,9 @@ gitment:
   cleanly: true # Hide 'Powered by ...' on footer, and more
   language: zh-Hans
   github_user: harderqian
-  github_repo: Giment
-  client_id: cf7fe84169f3a00732ca
-  client_secret: c40a48b24ba9a34242f4ce96e781f9d082a8bdf5
+  github_repo: HexoBlogComments
+  client_id: 535240c1e3d14ea6d5af
+  client_secret: 9e4ad8faf5f1e36d3105f200feb7b86b9c31e543
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
@@ -598,7 +598,7 @@ firestore:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: true
+  enable: false
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i>
