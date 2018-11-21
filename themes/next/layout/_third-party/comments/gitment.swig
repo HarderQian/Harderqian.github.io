@@ -1,3 +1,4 @@
+{% if not (theme.duoshuo and theme.duoshuo.shortname) and not theme.duoshuo_shortname %}
 {% if theme.gitment.enable and theme.gitment.client_id %}
 <!-- LOCAL: You can save these files to your site and update links -->
     {% if theme.gitment.mint %}
@@ -7,7 +8,7 @@
     {% else %}
         {% set CommentsClass = "Gitment" %}
         <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-        <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+        <script src="https://www.wenjunjiang.win/js/gitment.js"></script>
     {% endif %}
 <!-- END LOCAL -->
 
@@ -22,7 +23,7 @@
       <script type="text/javascript">
       function renderGitment(){
         var gitment = new {{CommentsClass}}({
-            id: window.location.pathname,
+            id: window.location.pathname, 
             owner: '{{ theme.gitment.github_user }}',
             repo: '{{ theme.gitment.github_repo }}',
             {% if theme.gitment.mint %}
@@ -54,4 +55,5 @@
       </script>
     {% endif %}
 
+{% endif %}
 {% endif %}
