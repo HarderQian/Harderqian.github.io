@@ -466,9 +466,9 @@ gitment:
   cleanly: true # Hide 'Powered by ...' on footer, and more
   language: zh-Hans
   github_user: harderqian
-  github_repo: HexoBlogComments
-  client_id: 2c37b078a73abf71765b
-  client_secret: 37c69432fe1a63b097cbc2eea895e6091d349d5f
+  github_repo: Giment
+  client_id: cf7fe84169f3a00732ca
+  client_secret: c40a48b24ba9a34242f4ce96e781f9d082a8bdf5
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
